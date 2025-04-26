@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of various online tools - image editing, text conversion, developer tools, and more">
+    <meta name="keywords" content="online tools, web tools, utility tools, AI tools, free tools">
+    <title>Tool Hub - A Collection of Various Online Tools</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Force browser to reload the page and clear cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Tool <span>Hub</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>All the Online Tools You Need in One Place</h1>
+                <p>Top 100 trending tools in one place - save time, make work easier!</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search tools...">
+                    <button type="submit" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="hero-btns">
+                    <a href="#tools" class="btn btn-primary">View Tools</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categories</h2>
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Tools</button>
+                <button class="category-btn" data-category="AI Tools">AI Tools</button>
+                <button class="category-btn" data-category="Image Tools">Image Tools</button>
+                <button class="category-btn" data-category="Video Tools">Video Tools</button>
+                <button class="category-btn" data-category="Document Tools">Document Tools</button>
+                <button class="category-btn" data-category="Developer Tools">Developer Tools</button>
+                <button class="category-btn" data-category="Web Tools">Web Tools</button>
+                <button class="category-btn" data-category="Security Tools">Security Tools</button>
+                <button class="category-btn" data-category="Design Tools">Design Tools</button>
+                <button class="category-btn" data-category="Utility Tools">Utility Tools</button>
+                <button class="category-btn" data-category="Media Tools">Media Tools</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Our Tools</h2>
+            <div class="tools-grid" id="tools-container">
+                <!-- Tools will be loaded dynamically with JavaScript -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Tool Hub is a platform where you can find various types of online tools that will simplify your daily tasks. Our goal is to provide an easy and free-to-use collection of tools.</p>
+                    <p>We regularly add new tools and update existing ones to ensure you always get the best experience.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Completely Free</h3>
+                        <p>Use all tools for free, no subscription required.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe Use</h3>
+                        <p>Your data is secure, we don't store any personal information.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Regular Updates</h3>
+                        <p>New trending tools are added every month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Tool <span>Hub</span></h2>
+                    <p>Essential online tools for daily work</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#tools">All Tools</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h3>Popular Categories</h3>
+                    <ul>
+                        <li><a href="#" data-category="AI Tools">AI Tools</a></li>
+                        <li><a href="#" data-category="Image Tools">Image Tools</a></li>
+                        <li><a href="#" data-category="Developer Tools">Developer Tools</a></li>
+                        <li><a href="#" data-category="Utility Tools">Utility Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" id="contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@toolhub.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tool Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Details Modal -->
+    <div class="modal" id="tool-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="tool-details" id="tool-details-container">
+                <!-- Tool details will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Preload Tools Data -->
+    <script>
+        let globalTools = [
+            {
+                "id": 1,
+                "name": "AI Content Writer",
+                "category": "AI Tools",
+                "description": "Create various types of content based on your needs with the help of AI.",
+                "icon": "fa-feather",
+                "usage": "Enter your topic and instructions, AI will automatically generate content.",
+                "features": ["Blog Post Generation", "Paraphrasing", "Keyword Optimization", "Tone Adjustment"]
+            },
+            {
+                "id": 2,
+                "name": "AI Image Generator",
+                "category": "AI Tools",
+                "description": "Create attractive images from text prompts in an instant.",
+                "icon": "fa-image",
+                "usage": "Write a description of the image you want, AI will quickly create it.",
+                "features": ["High Resolution", "Various Styles", "Customization", "Commercial Use"]
+            },
+            {
+                "id": 3,
+                "name": "Background Remover",
+                "category": "Image Tools",
+                "description": "Remove backgrounds from images easily without any Photoshop knowledge.",
+                "icon": "fa-cut",
+                "usage": "Upload your image, the system will automatically remove the background.",
+                "features": ["Automatic Detection", "Multiple Format Support", "Batch Processing", "Transparent PNG Output"]
+            },
+            {
+                "id": 4,
+                "name": "Image Resizer",
+                "category": "Image Tools",
+                "description": "Change image size and compress without quality loss.",
+                "icon": "fa-compress",
+                "usage": "Upload your image, set dimensions, and download.",
+                "features": ["Batch Resizing", "Aspect Ratio Maintenance", "File Size Optimization", "Multiple Formats"]
+            },
+            {
+                "id": 5,
+                "name": "Online Video Editor",
+                "category": "Video Tools",
+                "description": "Professional video editing right in your browser.",
+                "icon": "fa-video",
+                "usage": "Upload video to cut, trim, add effects and music.",
+                "features": ["Trimming", "Merging", "Text Overlay", "Filters", "Sound Mixing"]
+            },
+            {
+                "id": 6,
+                "name": "Video Converter",
+                "category": "Video Tools",
+                "description": "Convert videos to different formats quickly and easily.",
+                "icon": "fa-exchange-alt",
+                "usage": "Upload your video and select the target format.",
+                "features": ["Multiple Format Support", "Resolution Adjustment", "Quality Control", "Batch Conversion"]
+            },
+            {
+                "id": 7,
+                "name": "PDF Converter",
+                "category": "Document Tools",
+                "description": "Convert from PDF or to PDF in various formats.",
+                "icon": "fa-file-pdf",
+                "usage": "Upload your file and select the target format.",
+                "features": ["DOC/DOCX Conversion", "Image to PDF", "Excel to PDF", "PDF to Image"]
+            },
+            {
+                "id": 8,
+                "name": "Online Code Editor",
+                "category": "Developer Tools",
+                "description": "Write, edit, and share code directly in your browser.",
+                "icon": "fa-code",
+                "usage": "Write code in the editor, then click run button to see output.",
+                "features": ["Syntax Highlighting", "Auto-Complete", "Multiple Language Support", "Code Sharing"]
+            },
+            {
+                "id": 9,
+                "name": "JSON Formatter/Validator",
+                "category": "Developer Tools",
+                "description": "Format and validate JSON code to detect errors.",
+                "icon": "fa-file-code",
+                "usage": "Paste your JSON text in the entry box, the system will format and validate it.",
+                "features": ["Formatting", "Validation", "Error Highlighting", "JSON Parsing"]
+            },
+            {
+                "id": 10,
+                "name": "URL Shortener",
+                "category": "Web Tools",
+                "description": "Make long URL links short and shareable.",
+                "icon": "fa-link",
+                "usage": "Paste your long URL, the system will give you a short link.",
+                "features": ["Custom URL", "Click Tracking", "QR Code Generation", "Expiry Setting"]
+            },
+            {
+                "id": 11,
+                "name": "QR Code Generator",
+                "category": "Web Tools",
+                "description": "Create QR codes from URLs, text, or contact data.",
+                "icon": "fa-qrcode",
+                "usage": "Select content type and input data, the system will create a QR code.",
+                "features": ["Customizable", "High Resolution", "Multiple Formats", "Logo Integration"]
+            },
+            {
+                "id": 12,
+                "name": "Password Generator",
+                "category": "Security Tools",
+                "description": "Create strong and secure passwords.",
+                "icon": "fa-key",
+                "usage": "Select password length and options, the system will generate a password.",
+                "features": ["Customizable Length", "Special Character Options", "Strength Meter", "One-Click Copy"]
+            },
+            {
+                "id": 13,
+                "name": "Website Speed Tester",
+                "category": "Web Tools",
+                "description": "Test and optimize your website's loading speed.",
+                "icon": "fa-tachometer-alt",
+                "usage": "Enter website URL and click the test button.",
+                "features": ["Page Load Time", "Performance Metrics", "Optimization Tips", "Mobile/Desktop Testing"]
+            },
+            {
+                "id": 14,
+                "name": "Color Picker",
+                "category": "Design Tools",
+                "description": "View and select color codes in HEX, RGB, CMYK, and other formats.",
+                "icon": "fa-palette",
+                "usage": "Select your preferred color from the palette or input a color code.",
+                "features": ["Multiple Color Formats", "Color Saving", "Color Scheme Generation", "Eyedropper Tool"]
+            },
+            {
+                "id": 15,
+                "name": "Time Zone Converter",
+                "category": "Utility Tools",
+                "description": "Convert time between different time zones.",
+                "icon": "fa-clock",
+                "usage": "Select your local time and time zone to see other time zones.",
+                "features": ["Global Time Zones", "Daylight Saving Time", "Meeting Planner", "Time Calculation"]
+            },
+            {
+                "id": 16,
+                "name": "Currency Converter",
+                "category": "Utility Tools",
+                "description": "Convert currencies from different countries at real-time rates.",
+                "icon": "fa-money-bill-wave",
+                "usage": "Input currency amount and select source and target currencies.",
+                "features": ["Live Exchange Rates", "180+ Currencies", "Rate History", "Currency Calculator"]
+            },
+            {
+                "id": 17,
+                "name": "Unit Converter",
+                "category": "Utility Tools",
+                "description": "Convert various units including length, weight, temperature and more.",
+                "icon": "fa-ruler-combined",
+                "usage": "Select measurement type, value, and unit to see conversion.",
+                "features": ["Multiple Categories", "Precision Control", "Unit Info", "Quick Conversion"]
+            },
+            {
+                "id": 18,
+                "name": "Text to Speech Converter",
+                "category": "Media Tools",
+                "description": "Create natural-sounding voice audio from text.",
+                "icon": "fa-volume-up",
+                "usage": "Input your text, select voice, and click to convert.",
+                "features": ["Multiple Voices", "Language Support", "Speech Control", "Audio Download"]
+            },
+            {
+                "id": 19,
+                "name": "Speech to Text Converter",
+                "category": "Media Tools",
+                "description": "Create accurate text transcription from audio recordings.",
+                "icon": "fa-microphone",
+                "usage": "Upload audio or record using microphone.",
+                "features": ["Multiple Language Support", "Accurate Transcription", "Real-time Processing", "Editable Output"]
+            },
+            {
+                "id": 20,
+                "name": "Website Scanner",
+                "category": "Web Tools",
+                "description": "Find SEO and security issues on your website.",
+                "icon": "fa-search",
+                "usage": "Input your website URL and click to start scanning.",
+                "features": ["SEO Analysis", "Security Check", "Performance Testing", "Mobile Friendliness"]
+            },
+            {
+                "id": 21,
+                "name": "AI Chatbot Builder",
+                "category": "AI Tools",
+                "description": "Create your own customized AI chatbot without coding.",
+                "icon": "fa-robot",
+                "usage": "Define your chatbot's personality, knowledge, and responses through a simple interface.",
+                "features": ["No-Code Builder", "Custom Responses", "Learning Capabilities", "Website Integration"]
+            },
+            {
+                "id": 22,
+                "name": "AI Voice Cloning",
+                "category": "AI Tools",
+                "description": "Clone your voice or create custom AI voices for various projects.",
+                "icon": "fa-microphone-alt",
+                "usage": "Upload voice samples and generate AI-powered voice clones for your projects.",
+                "features": ["High Accuracy", "Multiple Languages", "Emotional Control", "Commercial Rights"]
+            },
+            {
+                "id": 23,
+                "name": "AI Code Assistant",
+                "category": "AI Tools",
+                "description": "Get help with coding tasks, debug issues, and generate code snippets.",
+                "icon": "fa-laptop-code",
+                "usage": "Describe your coding problem or request and get AI-generated solutions.",
+                "features": ["Multiple Languages", "Code Explanation", "Bug Detection", "Code Optimization"]
+            },
+            {
+                "id": 24,
+                "name": "Image Colorizer",
+                "category": "Image Tools",
+                "description": "Add color to black and white photos using AI technology.",
+                "icon": "fa-paint-brush",
+                "usage": "Upload a black and white image and let AI add natural-looking colors.",
+                "features": ["Historical Photo Support", "Adjustable Intensity", "Natural Colors", "High Resolution"]
+            },
+            {
+                "id": 25,
+                "name": "Image Enhancer",
+                "category": "Image Tools",
+                "description": "Improve low-quality images with AI upscaling and enhancement.",
+                "icon": "fa-expand-arrows-alt",
+                "usage": "Upload a low-resolution image to enhance quality and details.",
+                "features": ["4x Upscaling", "Noise Reduction", "Sharpening", "Face Enhancement"]
+            },
+            {
+                "id": 26,
+                "name": "Video Enhancer",
+                "category": "Video Tools",
+                "description": "Upscale and enhance video quality with advanced AI algorithms.",
+                "icon": "fa-film",
+                "usage": "Upload a video file to improve resolution, colors, and overall quality.",
+                "features": ["Resolution Upscaling", "Color Correction", "Noise Reduction", "Frame Rate Optimization"]
+            },
+            {
+                "id": 27,
+                "name": "Subtitle Generator",
+                "category": "Video Tools",
+                "description": "Automatically create accurate subtitles for any video content.",
+                "icon": "fa-closed-captioning",
+                "usage": "Upload a video or audio file to generate subtitles in multiple languages.",
+                "features": ["Multiple Languages", "Time Synchronization", "SRT/VTT Export", "Speaker Identification"]
+            },
+            {
+                "id": 28,
+                "name": "Document Scanner",
+                "category": "Document Tools",
+                "description": "Turn photos of documents into clear, professional-looking scans.",
+                "icon": "fa-scanner",
+                "usage": "Take a photo of a document with your device and convert it to a digital scan.",
+                "features": ["Edge Detection", "Perspective Correction", "Text Enhancement", "Multiple Export Formats"]
+            },
+            {
+                "id": 29,
+                "name": "OCR Tool",
+                "category": "Document Tools",
+                "description": "Extract text from images and scanned documents.",
+                "icon": "fa-file-alt",
+                "usage": "Upload an image containing text to extract and edit the content.",
+                "features": ["Multiple Languages", "Layout Preservation", "Handwriting Recognition", "Table Detection"]
+            },
+            {
+                "id": 30,
+                "name": "Excel to JSON Converter",
+                "category": "Document Tools",
+                "description": "Convert Excel spreadsheets to JSON format for easy data integration.",
+                "icon": "fa-table",
+                "usage": "Upload an Excel file and convert it to structured JSON data.",
+                "features": ["Multiple Sheet Support", "Custom Mapping", "Large File Handling", "Nested Structure Support"]
+            },
+            {
+                "id": 31,
+                "name": "SQL Formatter",
+                "category": "Developer Tools",
+                "description": "Format, beautify and validate SQL queries for better readability.",
+                "icon": "fa-database",
+                "usage": "Paste your SQL query to automatically format and beautify it.",
+                "features": ["Multiple SQL Dialects", "Syntax Highlighting", "Error Detection", "Query Optimization Tips"]
+            },
+            {
+                "id": 32,
+                "name": "API Tester",
+                "category": "Developer Tools",
+                "description": "Test API endpoints with a user-friendly interface.",
+                "icon": "fa-plug",
+                "usage": "Enter API URL, method, and parameters to send requests and view responses.",
+                "features": ["REST/GraphQL Support", "Authentication", "Request History", "Response Formatting"]
+            },
+            {
+                "id": 33,
+                "name": "CSS Gradient Generator",
+                "category": "Design Tools",
+                "description": "Create beautiful CSS gradients for your website backgrounds.",
+                "icon": "fa-paint-roller",
+                "usage": "Select colors and direction to generate CSS gradient code.",
+                "features": ["Linear/Radial Options", "Color Stops", "Live Preview", "CSS Code Generation"]
+            },
+            {
+                "id": 34,
+                "name": "SVG Editor",
+                "category": "Design Tools",
+                "description": "Create and edit SVG graphics directly in your browser.",
+                "icon": "fa-bezier-curve",
+                "usage": "Draw shapes, edit paths, and optimize SVG files for web use.",
+                "features": ["Path Editing", "Shape Tools", "SVG Optimization", "Code View"]
+            },
+            {
+                "id": 35,
+                "name": "Logo Generator",
+                "category": "Design Tools",
+                "description": "Create professional logos for your business or project.",
+                "icon": "fa-copyright",
+                "usage": "Enter your brand name and preferences to generate logo options.",
+                "features": ["Industry Templates", "Color Customization", "Vector Download", "Multiple Variations"]
+            },
+            {
+                "id": 36,
+                "name": "Password Strength Checker",
+                "category": "Security Tools",
+                "description": "Analyze the strength of your passwords and get improvement tips.",
+                "icon": "fa-shield-alt",
+                "usage": "Enter a password to check its strength and security level.",
+                "features": ["Breach Database Check", "Entropy Calculation", "Dictionary Attack Test", "Improvement Suggestions"]
+            },
+            {
+                "id": 37,
+                "name": "File Encryption",
+                "category": "Security Tools",
+                "description": "Encrypt files with strong encryption to protect sensitive data.",
+                "icon": "fa-lock",
+                "usage": "Upload a file and set a password to encrypt it securely.",
+                "features": ["AES-256 Encryption", "Password Protection", "Secure Deletion", "File Integrity Check"]
+            },
+            {
+                "id": 38,
+                "name": "Website Backup Tool",
+                "category": "Web Tools",
+                "description": "Create complete backups of your website files and database.",
+                "icon": "fa-cloud-download-alt",
+                "usage": "Enter your website details to create and download a full backup.",
+                "features": ["Scheduled Backups", "Incremental Backup", "Cloud Storage", "One-Click Restore"]
+            },
+            {
+                "id": 39,
+                "name": "Website Screenshot",
+                "category": "Web Tools",
+                "description": "Take screenshots of any website at different device sizes.",
+                "icon": "fa-desktop",
+                "usage": "Enter a URL to capture screenshots in various device dimensions.",
+                "features": ["Multiple Devices", "Full Page Capture", "Delay Option", "Annotation Tools"]
+            },
+            {
+                "id": 40,
+                "name": "DNS Lookup Tool",
+                "category": "Web Tools",
+                "description": "Check DNS records and propagation for any domain.",
+                "icon": "fa-globe",
+                "usage": "Enter a domain name to view its DNS records and information.",
+                "features": ["All Record Types", "Global Propagation Check", "TTL Information", "Historical Data"]
+            },
+            {
+                "id": 41,
+                "name": "IP Geolocation",
+                "category": "Web Tools",
+                "description": "Find the geographic location of any IP address.",
+                "icon": "fa-map-marker-alt",
+                "usage": "Enter an IP address to see its geographic location and details.",
+                "features": ["Country/City Detection", "ISP Information", "Map Visualization", "Timezone Data"]
+            },
+            {
+                "id": 42,
+                "name": "Image Compression",
+                "category": "Image Tools",
+                "description": "Reduce image file sizes without visible quality loss.",
+                "icon": "fa-file-archive",
+                "usage": "Upload images to compress them for faster website loading.",
+                "features": ["Batch Processing", "Quality Control", "WebP Conversion", "Metadata Removal"]
+            },
+            {
+                "id": 43,
+                "name": "Audio Converter",
+                "category": "Media Tools",
+                "description": "Convert audio files between different formats.",
+                "icon": "fa-music",
+                "usage": "Upload audio files and select the output format you need.",
+                "features": ["Multiple Format Support", "Bitrate Adjustment", "Metadata Preservation", "Batch Conversion"]
+            },
+            {
+                "id": 44,
+                "name": "Audio Editor",
+                "category": "Media Tools",
+                "description": "Edit audio files with a simple yet powerful online editor.",
+                "icon": "fa-waveform",
+                "usage": "Upload an audio file to trim, merge, add effects, and more.",
+                "features": ["Trimming", "Noise Reduction", "Effects Library", "Voice Enhancement"]
+            },
+            {
+                "id": 45,
+                "name": "Language Translator",
+                "category": "Utility Tools",
+                "description": "Translate text between multiple languages with high accuracy.",
+                "icon": "fa-language",
+                "usage": "Enter text and select source and target languages for translation.",
+                "features": ["100+ Languages", "Document Translation", "Speech-to-Translation", "Phrase Book"]
+            },
+            {
+                "id": 46,
+                "name": "Notes & Todo App",
+                "category": "Utility Tools",
+                "description": "Simple and powerful note-taking and task management.",
+                "icon": "fa-tasks",
+                "usage": "Create, organize, and manage notes and tasks in one place.",
+                "features": ["Rich Text Editing", "Task Lists", "Categories", "Cloud Sync"]
+            },
+            {
+                "id": 47,
+                "name": "Markdown Editor",
+                "category": "Utility Tools",
+                "description": "Create and edit content using Markdown with live preview.",
+                "icon": "fa-markdown",
+                "usage": "Write in Markdown format with real-time rendering preview.",
+                "features": ["Syntax Highlighting", "Live Preview", "Export Options", "Templates"]
+            },
+            {
+                "id": 48,
+                "name": "Screen Recorder",
+                "category": "Media Tools",
+                "description": "Record your screen, webcam, or both with audio.",
+                "icon": "fa-record-vinyl",
+                "usage": "Select what to record and start capturing your screen content.",
+                "features": ["Screen+Webcam", "Audio Recording", "Drawing Tools", "Multiple Export Formats"]
+            },
+            {
+                "id": 49,
+                "name": "Data Visualization Tool",
+                "category": "Developer Tools",
+                "description": "Create interactive charts and graphs from your data.",
+                "icon": "fa-chart-bar",
+                "usage": "Upload data or paste from spreadsheet to generate visual charts.",
+                "features": ["Multiple Chart Types", "Interactive Elements", "Export Options", "Data Filtering"]
+            },
+            {
+                "id": 50,
+                "name": "Random Data Generator",
+                "category": "Developer Tools",
+                "description": "Generate random test data for development and testing.",
+                "icon": "fa-random",
+                "usage": "Select data types and quantity to generate random test data.",
+                "features": ["Multiple Data Types", "Custom Formatting", "API Access", "Bulk Generation"]
+            },
+            {
+                "id": 51,
+                "name": "AI Text Summarizer",
+                "category": "AI Tools",
+                "description": "Automatically summarize long articles and documents with AI.",
+                "icon": "fa-file-alt",
+                "usage": "Paste or upload text to generate a concise summary.",
+                "features": ["Adjustable Length", "Key Points Extraction", "Multiple Languages", "Citation Preservation"]
+            },
+            {
+                "id": 52,
+                "name": "AI Resume Builder",
+                "category": "AI Tools",
+                "description": "Create professional resumes with AI assistance and templates.",
+                "icon": "fa-file-user",
+                "usage": "Enter your details and let AI help craft a professional resume.",
+                "features": ["ATS-Friendly", "Multiple Templates", "Skills Suggestions", "Job-Specific Tailoring"]
+            },
+            {
+                "id": 53,
+                "name": "AI Email Writer",
+                "category": "AI Tools",
+                "description": "Draft professional emails quickly with AI assistance.",
+                "icon": "fa-envelope",
+                "usage": "Specify the email purpose and recipient to get AI-generated drafts.",
+                "features": ["Tone Selection", "Length Control", "Templates", "Grammar Check"]
+            },
+            {
+                "id": 54,
+                "name": "AI Video Script Generator",
+                "category": "AI Tools",
+                "description": "Create engaging video scripts based on your topic and style.",
+                "icon": "fa-scroll",
+                "usage": "Enter your video topic, length, and style preferences.",
+                "features": ["Different Formats", "Hook Creation", "Call-to-Action", "Timed Sections"]
+            },
+            {
+                "id": 55,
+                "name": "Face Swapper",
+                "category": "Image Tools",
+                "description": "Swap faces in photos with safe, ethical AI technology.",
+                "icon": "fa-user-edit",
+                "usage": "Upload two images to swap faces between them.",
+                "features": ["High Accuracy", "Natural Results", "Privacy Protection", "Multiple Faces Support"]
+            },
+            {
+                "id": 56,
+                "name": "Image Cartoonizer",
+                "category": "Image Tools",
+                "description": "Transform photos into cartoon or comic style artwork.",
+                "icon": "fa-pencil-ruler",
+                "usage": "Upload an image to convert it to cartoon-style art.",
+                "features": ["Multiple Styles", "Customization", "Batch Processing", "High Resolution"]
+            },
+            {
+                "id": 57,
+                "name": "Video Trimmer",
+                "category": "Video Tools",
+                "description": "Quickly trim and cut videos without quality loss.",
+                "icon": "fa-cut",
+                "usage": "Upload a video to trim unwanted parts at the beginning or end.",
+                "features": ["Precise Control", "No Quality Loss", "Multiple Export Options", "Preview"]
+            },
+            {
+                "id": 58,
+                "name": "Video Compressor",
+                "category": "Video Tools",
+                "description": "Reduce video file size while maintaining good quality.",
+                "icon": "fa-compress-arrows-alt",
+                "usage": "Upload a video to compress it for easier sharing.",
+                "features": ["Quality Control", "Fast Processing", "Multiple Formats", "Batch Processing"]
+            },
+            {
+                "id": 59,
+                "name": "Video Background Remover",
+                "category": "Video Tools",
+                "description": "Remove the background from videos for transparent overlay effects.",
+                "icon": "fa-clone",
+                "usage": "Upload a video to automatically remove its background.",
+                "features": ["Real-time Processing", "Green Screen Alternative", "Multiple Export Formats", "Preview"]
+            },
+            {
+                "id": 60,
+                "name": "PDF Split & Merge",
+                "category": "Document Tools",
+                "description": "Split PDFs into multiple files or merge multiple PDFs into one.",
+                "icon": "fa-object-group",
+                "usage": "Upload PDF files to split pages or combine multiple documents.",
+                "features": ["Page Selection", "Reordering", "Password Removal", "Compression"]
+            },
+            {
+                "id": 61,
+                "name": "PDF Form Creator",
+                "category": "Document Tools",
+                "description": "Create fillable PDF forms with interactive elements.",
+                "icon": "fa-clipboard-list",
+                "usage": "Upload a PDF or start from scratch to create fillable forms.",
+                "features": ["Input Fields", "Dropdowns", "Checkboxes", "Form Validation"]
+            },
+            {
+                "id": 62,
+                "name": "eSignature Tool",
+                "category": "Document Tools",
+                "description": "Create, request, and manage electronic signatures on documents.",
+                "icon": "fa-signature",
+                "usage": "Upload documents and add signature fields for you or others.",
+                "features": ["Legal Compliance", "Multiple Signers", "Audit Trail", "Template Saving"]
+            },
+            {
+                "id": 63,
+                "name": "HTML/CSS Minifier",
+                "category": "Developer Tools",
+                "description": "Compress HTML, CSS, and JavaScript files to improve website performance.",
+                "icon": "fa-file-code",
+                "usage": "Paste or upload code to compress and optimize it.",
+                "features": ["Whitespace Removal", "Comment Removal", "Code Optimization", "Batch Processing"]
+            },
+            {
+                "id": 64,
+                "name": "Regex Tester",
+                "category": "Developer Tools",
+                "description": "Build, test, and debug regular expressions with real-time feedback.",
+                "icon": "fa-terminal",
+                "usage": "Enter a regex pattern and test string to see matches and results.",
+                "features": ["Syntax Highlighting", "Match Highlighting", "Explanation Mode", "Pattern Library"]
+            },
+            {
+                "id": 65,
+                "name": "Cron Job Generator",
+                "category": "Developer Tools",
+                "description": "Create and validate cron expressions for scheduled tasks.",
+                "icon": "fa-calendar-alt",
+                "usage": "Use the interface to select timing patterns and generate cron syntax.",
+                "features": ["Visual Builder", "Human Readable", "Next Run Prediction", "Examples Library"]
+            },
+            {
+                "id": 66,
+                "name": "Mock API Generator",
+                "category": "Developer Tools",
+                "description": "Create mock APIs for testing and development without backend.",
+                "icon": "fa-server",
+                "usage": "Define endpoints and responses to create a functional mock API.",
+                "features": ["Custom Responses", "Delay Simulation", "Error States", "API Documentation"]
+            },
+            {
+                "id": 67,
+                "name": "Website Mockup Generator",
+                "category": "Design Tools",
+                "description": "Create realistic mockups of your website on various devices.",
+                "icon": "fa-laptop-house",
+                "usage": "Enter your website URL or upload screenshots to create device mockups.",
+                "features": ["Multiple Devices", "Custom Backgrounds", "Angle Adjustment", "High Resolution"]
+            },
+            {
+                "id": 68,
+                "name": "Social Media Banner Creator",
+                "category": "Design Tools",
+                "description": "Design perfect-sized banners for various social media platforms.",
+                "icon": "fa-image",
+                "usage": "Select a platform and create banners with the correct dimensions.",
+                "features": ["Platform Templates", "Design Elements", "Text Effects", "One-Click Resize"]
+            },
+            {
+                "id": 69,
+                "name": "Icon Generator",
+                "category": "Design Tools",
+                "description": "Create custom icons for apps, websites, and projects.",
+                "icon": "fa-icons",
+                "usage": "Design or upload a base image to generate icons in multiple sizes and formats.",
+                "features": ["Multiple Sizes", "Format Conversion", "Template Library", "Favicon Package"]
+            },
+            {
+                "id": 70,
+                "name": "Animation Creator",
+                "category": "Design Tools",
+                "description": "Create simple animations for websites and presentations.",
+                "icon": "fa-play-circle",
+                "usage": "Use the timeline editor to create and export web animations.",
+                "features": ["CSS Animation", "GIF Export", "Template Library", "Interactive Preview"]
+            },
+            {
+                "id": 71,
+                "name": "SSL Checker",
+                "category": "Security Tools",
+                "description": "Verify SSL certificates and check for security issues.",
+                "icon": "fa-lock",
+                "usage": "Enter a domain to check its SSL certificate status and configuration.",
+                "features": ["Certificate Details", "Expiration Alerts", "Security Assessment", "Chain Validation"]
+            },
+            {
+                "id": 72,
+                "name": "Website Security Scanner",
+                "category": "Security Tools",
+                "description": "Scan websites for vulnerabilities and security issues.",
+                "icon": "fa-shield-virus",
+                "usage": "Enter your website URL to scan for common security vulnerabilities.",
+                "features": ["XSS Detection", "SQL Injection Test", "CSRF Check", "Headers Analysis"]
+            },
+            {
+                "id": 73,
+                "name": "Hash Generator",
+                "category": "Security Tools",
+                "description": "Generate secure hash values for text or files.",
+                "icon": "fa-hashtag",
+                "usage": "Enter text or upload a file to generate various hash values.",
+                "features": ["Multiple Algorithms", "File Hashing", "Hash Comparison", "Base64 Encoding"]
+            },
+            {
+                "id": 74,
+                "name": "WHOIS Lookup",
+                "category": "Web Tools",
+                "description": "Look up domain registration information and availability.",
+                "icon": "fa-search-location",
+                "usage": "Enter a domain name to view its ownership and registration details.",
+                "features": ["Ownership Details", "Expiration Date", "Name Servers", "Registration History"]
+            },
+            {
+                "id": 75,
+                "name": "Broken Link Checker",
+                "category": "Web Tools",
+                "description": "Find broken links on your website to improve user experience.",
+                "icon": "fa-unlink",
+                "usage": "Enter your website URL to scan for broken links and errors.",
+                "features": ["Deep Crawling", "Status Codes", "Export Results", "Scheduled Scans"]
+            },
+            {
+                "id": 76,
+                "name": "HTTP Headers Analyzer",
+                "category": "Developer Tools",
+                "description": "Analyze HTTP headers for security and optimization.",
+                "icon": "fa-code",
+                "usage": "Enter a URL to analyze its HTTP headers and security settings.",
+                "features": ["Security Headers", "Cache Analysis", "CORS Settings", "Best Practices"]
+            },
+            {
+                "id": 77,
+                "name": "SEO Analyzer",
+                "category": "Web Tools",
+                "description": "Analyze website content for SEO optimization opportunities.",
+                "icon": "fa-chart-line",
+                "usage": "Enter a URL to analyze its SEO factors and get improvement tips.",
+                "features": ["Keyword Analysis", "Meta Tags Check", "Content Quality", "Mobile Friendliness"]
+            },
+            {
+                "id": 78,
+                "name": "Social Media Image Resizer",
+                "category": "Image Tools",
+                "description": "Resize images to optimal dimensions for each social platform.",
+                "icon": "fa-crop-alt",
+                "usage": "Upload an image and select target platforms for perfect sizing.",
+                "features": ["All Major Platforms", "Batch Resizing", "Smart Cropping", "Template Grid"]
+            },
+            {
+                "id": 79,
+                "name": "Image Text Extractor",
+                "category": "Image Tools",
+                "description": "Extract text from images using OCR technology.",
+                "icon": "fa-font",
+                "usage": "Upload an image containing text to extract and edit the content.",
+                "features": ["Multiple Languages", "Layout Preservation", "Format Conversion", "Batch Processing"]
+            },
+            {
+                "id": 80,
+                "name": "Image to Base64",
+                "category": "Developer Tools",
+                "description": "Convert images to Base64 encoded strings for web embedding.",
+                "icon": "fa-file-export",
+                "usage": "Upload an image to convert it to a Base64 encoded string.",
+                "features": ["Multiple Formats", "Data URI Format", "Size Optimization", "Batch Conversion"]
+            },
+            {
+                "id": 81,
+                "name": "CSV to JSON Converter",
+                "category": "Developer Tools",
+                "description": "Convert CSV data to JSON format for API usage.",
+                "icon": "fa-exchange-alt",
+                "usage": "Upload or paste CSV data to convert to JSON format.",
+                "features": ["Custom Mapping", "Array Formatting", "Nested Structures", "Headers Customization"]
+            },
+            {
+                "id": 82,
+                "name": "JSON to XML Converter",
+                "category": "Developer Tools",
+                "description": "Convert between JSON and XML data formats.",
+                "icon": "fa-code-branch",
+                "usage": "Paste JSON or XML to convert between formats.",
+                "features": ["Bidirectional Conversion", "Pretty Printing", "Attribute Support", "Namespace Handling"]
+            },
+            {
+                "id": 83,
+                "name": "WebP Converter",
+                "category": "Image Tools",
+                "description": "Convert images to and from WebP format for better web performance.",
+                "icon": "fa-file-image",
+                "usage": "Upload images to convert to or from WebP format.",
+                "features": ["Batch Processing", "Quality Control", "Transparency Support", "Metadata Preservation"]
+            },
+            {
+                "id": 84,
+                "name": "ASCII Art Generator",
+                "category": "Design Tools",
+                "description": "Convert images into ASCII art text representations.",
+                "icon": "fa-align-left",
+                "usage": "Upload an image to convert it into ASCII art characters.",
+                "features": ["Multiple Styles", "Custom Characters", "Color Option", "Size Adjustment"]
+            },
+            {
+                "id": 85,
+                "name": "Text Comparison Tool",
+                "category": "Utility Tools",
+                "description": "Compare two texts and highlight differences.",
+                "icon": "fa-columns",
+                "usage": "Paste two texts to see differences highlighted side by side.",
+                "features": ["Word Level Comparison", "Line by Line", "Export Diff", "Character Count"]
+            },
+            {
+                "id": 86,
+                "name": "Citation Generator",
+                "category": "Utility Tools",
+                "description": "Generate properly formatted citations for academic papers.",
+                "icon": "fa-quote-right",
+                "usage": "Enter source details to generate citations in various formats.",
+                "features": ["Multiple Citation Styles", "Website/Book/Journal", "Bibliography Export", "In-Text Citations"]
+            },
+            {
+                "id": 87,
+                "name": "Password Manager",
+                "category": "Security Tools",
+                "description": "Securely store and manage your passwords.",
+                "icon": "fa-key",
+                "usage": "Create an encrypted vault for your passwords and login details.",
+                "features": ["End-to-End Encryption", "Password Health Check", "Auto-Fill", "Secure Notes"]
+            },
+            {
+                "id": 88,
+                "name": "Pomodoro Timer",
+                "category": "Utility Tools",
+                "description": "Boost productivity with timed work and break sessions.",
+                "icon": "fa-hourglass-half",
+                "usage": "Set work/break intervals and track your productivity sessions.",
+                "features": ["Customizable Intervals", "Task Tracking", "Statistics", "Notification Alerts"]
+            },
+            {
+                "id": 89,
+                "name": "Code Snippet Manager",
+                "category": "Developer Tools",
+                "description": "Save and organize reusable code snippets.",
+                "icon": "fa-code",
+                "usage": "Create, categorize, and search through your code snippets library.",
+                "features": ["Syntax Highlighting", "Tags/Categories", "Searching", "Cloud Sync"]
+            },
+            {
+                "id": 90,
+                "name": "Word Counter",
+                "category": "Utility Tools",
+                "description": "Count words, characters, and reading time for text.",
+                "icon": "fa-calculator",
+                "usage": "Paste or type text to count words, characters, and get statistics.",
+                "features": ["Reading Time", "Speaking Time", "Keyword Density", "Readability Score"]
+            },
+            {
+                "id": 91,
+                "name": "HTML Entity Encoder",
+                "category": "Developer Tools",
+                "description": "Convert special characters to HTML entities and vice versa.",
+                "icon": "fa-greater-than-equal",
+                "usage": "Paste text to convert special characters to and from HTML entities.",
+                "features": ["Bidirectional Conversion", "Named Entities", "Numeric Entities", "UTF-8 Support"]
+            },
+            {
+                "id": 92,
+                "name": "Random Name Generator",
+                "category": "Utility Tools",
+                "description": "Generate random names for characters, businesses, or projects.",
+                "icon": "fa-user-tag",
+                "usage": "Select options to generate random names for various purposes.",
+                "features": ["Different Ethnicities", "Business Names", "Character Names", "Fantasy Names"]
+            },
+            {
+                "id": 93,
+                "name": "AI Story Generator",
+                "category": "AI Tools",
+                "description": "Create unique short stories based on your inputs.",
+                "icon": "fa-book",
+                "usage": "Enter a prompt or theme to generate a creative short story.",
+                "features": ["Genre Selection", "Character Development", "Plot Twists", "Length Control"]
+            },
+            {
+                "id": 94,
+                "name": "Audio Visualizer",
+                "category": "Media Tools",
+                "description": "Create visual animations that react to audio.",
+                "icon": "fa-wave-square",
+                "usage": "Upload audio to generate reactive visualizations.",
+                "features": ["Multiple Visual Styles", "Customization", "Video Export", "Real-time Preview"]
+            },
+            {
+                "id": 95,
+                "name": "Calendar Creator",
+                "category": "Utility Tools",
+                "description": "Generate and print customized calendars.",
+                "icon": "fa-calendar",
+                "usage": "Select dates, events, and design to create custom calendars.",
+                "features": ["Multiple Layouts", "Holiday Integration", "Custom Events", "PDF Export"]
+            },
+            {
+                "id": 96,
+                "name": "Font Identifier",
+                "category": "Design Tools",
+                "description": "Identify fonts from images with AI recognition.",
+                "icon": "fa-font",
+                "usage": "Upload an image of text to identify the font used.",
+                "features": ["Similar Font Suggestions", "Commercial/Free Filter", "Character Preview", "Font Pairing"]
+            },
+            {
+                "id": 97,
+                "name": "Math Expression Solver",
+                "category": "Utility Tools",
+                "description": "Solve and plot mathematical expressions and equations.",
+                "icon": "fa-square-root-alt",
+                "usage": "Enter a mathematical expression to solve and visualize it.",
+                "features": ["Step-by-Step Solutions", "Graphing", "Variable Support", "Complex Equations"]
+            },
+            {
+                "id": 98,
+                "name": "AI Meeting Summarizer",
+                "category": "AI Tools",
+                "description": "Automatically summarize meeting transcripts and recordings.",
+                "icon": "fa-clipboard",
+                "usage": "Upload meeting audio or transcript for AI summarization.",
+                "features": ["Key Points Extraction", "Action Items", "Speaker Identification", "Topic Segmentation"]
+            },
+            {
+                "id": 99,
+                "name": "PDF Password Protector",
+                "category": "Security Tools",
+                "description": "Add password protection to sensitive PDF documents.",
+                "icon": "fa-file-pdf",
+                "usage": "Upload a PDF and add password protection for viewing or editing.",
+                "features": ["View Protection", "Edit Protection", "Batch Processing", "256-bit Encryption"]
+            },
+            {
+                "id": 100,
+                "name": "AI Presentation Creator",
+                "category": "AI Tools",
+                "description": "Create professional presentation slides with AI assistance.",
+                "icon": "fa-presentation",
+                "usage": "Enter your topic and key points to generate presentation slides.",
+                "features": ["Multiple Themes", "Image Suggestions", "Content Organization", "Export Options"]
+            }
+        ];
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
